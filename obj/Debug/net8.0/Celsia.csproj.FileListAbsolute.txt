@@ -1,0 +1,9 @@
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.csproj.AssemblyReference.cache
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.AssemblyInfoInputs.cache
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.AssemblyInfo.cs
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.csproj.CoreCompileInputs.cache
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.RazorAssemblyInfo.cache
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.RazorAssemblyInfo.cs
+C:\Users\Laura\OneDrive\Escritorio\Celsia\Celsia\obj\Debug\net8.0\Celsia.sourcelink.json
