@@ -1,14 +1,22 @@
-using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Celsia.Models
 {
     public class Factura
     {
-        public int ID { get; set; }
-        public string NumeroFactura { get; set; }
-        public DateTime FechaFacturacion { get; set; }
-        public decimal MontoFacturado { get; set; }
-        public decimal MontoPagado { get; set; }
-    }
+        [Key]
+        public int IdFactura { get; set; }
 
+        [Required]
+        [StringLength(50)]
+        public string NumeroFactura { get; set; }
+
+        [Required]
+        public DateTime FechaFacturacion { get; set; }
+
+        [Required]
+        public decimal MontoFacturado { get; set; }
+
+        public decimal? MontoPagado { get; set; }
+    }
 }

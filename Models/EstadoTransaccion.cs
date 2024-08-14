@@ -1,11 +1,14 @@
-using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Celsia.Models
 {
     public class EstadoTransaccion
     {
-        public int ID { get; set; }
+        [Key]
+        public int IdEstadoTransaccion { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string DescripcionEstado { get; set; }
     }
-
 }

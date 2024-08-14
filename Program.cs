@@ -1,5 +1,5 @@
-using Celsia.Data;
 using Microsoft.EntityFrameworkCore;
+using Celsia.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
