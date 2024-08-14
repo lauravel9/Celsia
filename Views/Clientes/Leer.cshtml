@@ -1,0 +1,119 @@
+<center> 
+<br>
+<div style="width: 50%; ">
+    <h1>Clientes</h1>
+<br>
+
+</center>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <br>
+            <div>
+                <button><a style="text-decoration: none; color:#000000;" asp-area="" asp-controller="Clientes" asp-action="Crear">Crear Cliente</a></button>
+            </div>
+                <br><br>
+            <div>
+                <button><a style="text-decoration: none; color: #000000;" asp-area="" asp-controller="Clientes" asp-action="Leer">Listado de Clientes</a></button>
+            </div>
+        </div>
+
+        <div class="col-md-9 ms-5">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <td>ID</td>
+                        <td>Nombre</td>
+                        <td>Identificacion</td>
+                        <td>Direccion</td>
+                        <td>Telefono</td>
+                        <td>Correo electronico</td>
+                        <td></td>
+                    </tr>
+                </thead>
+
+            @foreach (var Clientes in Model){
+                <tr>
+                    <td>@Clientes.IdCliente</td>
+                    <td>@Clientes.Nombre</td>
+                    <td>@Clientes.Identificacion</td>
+                    <td>@Clientes.Direccion</td>
+                    <td>@Clientes.Telefono</td>
+                    <td>@Clientes.CorreoElectronico</td>
+                    <td>
+                        <a class="btn btn2" asp-controller="Clientes" asp-action="Actualizar" asp-route-id="@Clientes.IdCliente">Editar</a> 
+                        <a class="btn btn1" asp-controller="Clientes" asp-action="Eliminar" asp-route-id="@Clientes.IdCliente">Eliminar</a>
+                    </td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+
+button {
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 145.02px;
+    height: 60.66px;
+    border: none;
+    background-color: #ff812d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1
+{
+    background-color: #ff812d;
+    
+}
+
+.btn2
+{
+    background-color: #ff812d;
+    
+}
+
+
+.InputContainer {
+    width: 320px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(196, 251, 255),rgb(196, 251, 255));
+    border-radius: 55px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+    width: 230px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+}
+
+.btn4{
+    width: 80px;
+    height: 40px;
+    border-radius: 60px;
+    background-color: rgb(196, 251, 255);
+}
+
+
+</style>
